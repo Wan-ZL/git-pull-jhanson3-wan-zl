@@ -7,6 +7,18 @@
  * to the same file, it is not intended to evaluate your ability to write a data structure.
  */
 public class MyList {
+	
+	private class Node {
+		private String data;
+		private Node next;
+	}
+
+	private Node head;
+
+	public MyList() {
+		this.head = null;
+	}
+	
 
   /**
    * Adds the element as the first element of the list.
@@ -14,8 +26,11 @@ public class MyList {
    * using the appropriate structure.
    */
   public void addFirst(String element) {
-    // Partner 1 should write this using a link structure.
-    // Partner 2 should write this using an array structure.
+	// Make a new node, with the element, then adjust head.
+			Node newHead = new Node();
+			newHead.data = element;
+			newHead.next = this.head;
+			this.head = newHead;
   }
 
   /**
