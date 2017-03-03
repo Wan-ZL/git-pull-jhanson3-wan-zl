@@ -7,8 +7,25 @@
  * to the same file, it is not intended to evaluate your ability to write a data structure.
  */
 public class MyList {
+	
+	private class Node {
+		private String data;
+		private Node next;
+	}
 
-	String[] array;
+	private Node head;
+
+
+	
+
+
+
+  /**
+   * Adds the element as the first element of the list.
+   * You don't need to implement this fully, just have something that is a start
+   * using the appropriate structure.
+   */
+
 
 	public MyList() {
 		this.array = new String[0];
